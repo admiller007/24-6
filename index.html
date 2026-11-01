@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chicago Locksmith | 24/6 Locksmith</title>
+<meta name="description" content="Call (312) 278-7065 for a licensed, insured local Chicago locksmith. Car, home, and business lockouts, rekeying, and new locks. Arrival in as little as 20 minutes.">
+<meta property="og:title" content="Chicago Locksmith | 24/6 Locksmith">
+<meta property="og:description" content="A local Chicago locksmith. Call (312) 278-7065 and talk to the locksmith, not a call center.">
+<meta property="og:url" content="https://mylocknow.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://mylocknow.com/favicons/f745d6a2-10b9-40a0-aa6e-07065cceefd9/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Big+Shoulders+Display:wght@600;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Locksmith",
+  "name": "24/6 Locksmith",
+  "url": "https://mylocknow.com/",
+  "telephone": "+1-312-278-7065",
+  "areaServed": "Chicago and suburbs within 25 miles",
+  "sameAs": ["https://www.yelp.com/biz/24-6-locksmith-chicago"]
+}
+</script>
+<style>
+  :root {
+    --paper: #FFFFFF;
+    --ink: #0F2438;
+    --steel: #4E6072;
+    --sky: #41B6E6;
+    --sky-wash: #E6F5FC;
+    --red: #E4002B;
+    --red-deep: #B80023;
+    --brass: #C99A2E;
+    --brass-deep: #8A6618;
+
+    --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    --text: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
+
+    --measure: 38rem;
+    --gutter: clamp(16px, 4vw, 48px);
+    --max: 1180px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--text);
+    font-size: 1.125rem;          /* 18px */
+    line-height: 1.55;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; border-radius: 2px; }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.005em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; }
+
+  /* ---------- Buttons ---------- */
+  .call {
+    display: inline-flex; align-items: center; gap: 0.6em;
+    background: var(--red); color: #fff;
+    font-family: var(--display); font-weight: 800;
+    font-size: 1.5rem; line-height: 1;
+    padding: 0.7em 1.05em 0.66em;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color .15s;
+  }
+  .call:hover { background: var(--red-deep); }
+  .call svg { width: 0.85em; height: 0.85em; flex: none; }
+  .call-num { font-variant-numeric: tabular-nums; letter-spacing: 0.01em; }
+
+  .quiet-link {
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--sky);
+  }
+  .quiet-link:hover { text-decoration-color: var(--ink); }
+
+  /* ---------- Header ---------- */
+  .top { border-bottom: 1px solid var(--sky-wash); }
+  .top .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; min-height: 76px;
+  }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--display); font-weight: 800; font-size: 1.75rem;
+    text-decoration: none; line-height: 1;
+  }
+  .brand svg { width: 26px; height: 26px; fill: var(--red); }
+  .top-right { display: flex; align-items: center; gap: 28px; }
+  .top-right .quiet-link { font-size: 1rem; }
+  .top .call { font-size: 1.25rem; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: clamp(40px, 7vw, 88px) 0 0; }
+  .hero h1 {
+    font-size: clamp(3rem, 6.6vw, 5.25rem);
+  }
+  .hero h1 .line { display: inline-block; text-wrap: wrap; }
+  .hero-grid {
+    margin-top: 28px;
+    display: grid; gap: 28px 64px;
+    grid-template-columns: minmax(0, 34rem) auto;
+    align-items: start;
+  }
+  .lede { font-size: 1.25rem; line-height: 1.5; }
+  .hero-actions {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px;
+  }
+  .hours { margin-top: 14px; color: var(--steel); font-size: 1rem; }
+  @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; } }
+
+  /* The flag band: blue stripe, white field with the key, blue stripe */
+  .band { margin-top: clamp(48px, 7vw, 80px); }
+  .band::before, .band::after {
+    content: ""; display: block; height: clamp(14px, 2vw, 22px); background: var(--sky);
+  }
+  .band-field { padding: clamp(24px, 4vw, 48px) 0 clamp(20px, 3vw, 36px); }
+  .key-link { display: block; text-decoration: none; border-radius: 8px; }
+  .key { display: block; width: 100%; height: auto; overflow: visible; }
+  .key .metal { fill: var(--brass); stroke: var(--brass-deep); stroke-width: 3; stroke-linejoin: round; }
+  .key .groove { stroke: var(--brass-deep); stroke-width: 4; stroke-linecap: round; opacity: .55; }
+  .key .hole { fill: var(--paper); stroke: var(--brass-deep); stroke-width: 3; }
+  .key .stamp { font-family: var(--display); font-weight: 900; font-size: 54px; fill: var(--brass-deep); }
+  .key .digit {
+    font-family: var(--display); font-weight: 800; font-size: 46px;
+    fill: var(--ink); text-anchor: middle;
+    transition: opacity .2s;
+  }
+  .key .digit.pending { opacity: 0; }
+  .key .tick { stroke: var(--sky); stroke-width: 2; }
+  .key-caption {
+    margin-top: 8px;
+    font-size: 1.125rem; color: var(--steel);
+  }
+  .key-caption strong { color: var(--ink); font-weight: 700; white-space: nowrap; }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: clamp(64px, 9vw, 120px) 0; }
+  .block h2 { font-size: clamp(2.5rem, 5.4vw, 4rem); max-width: 16ch; }
+  .block .intro { margin-top: 20px; max-width: var(--measure); }
+
+  /* Services */
+  .services {
+    margin: 48px 0 0; padding: 0; list-style: none;
+    display: grid; gap: 40px 56px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .services h3 { font-size: 2rem; }
+  .services p { margin-top: 10px; color: var(--steel); }
+
+  /* Guarantees */
+  .guarantees { background: var(--sky-wash); }
+  .split {
+    display: grid; gap: 40px 72px;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    align-items: start;
+  }
+  .glist { margin: 0; padding: 0; list-style: none; }
+  .glist li { padding: 28px 0; border-top: 2px solid var(--sky); }
+  .glist li:last-child { border-bottom: 2px solid var(--sky); }
+  .glist h3 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); }
+  .glist p { margin-top: 10px; max-width: 34rem; }
+
+  /* Local */
+  .local p + p { margin-top: 1em; }
+  .local .body { margin-top: 24px; max-width: var(--measure); }
+  .tip {
+    margin-top: 40px; max-width: var(--measure);
+    padding-left: 22px; border-left: 4px solid var(--red);
+  }
+  .tip p { font-size: 1.25rem; line-height: 1.45; }
+
+  /* Area */
+  .area { border-top: 1px solid var(--sky-wash); }
+  .checker { margin-top: 36px; max-width: 30rem; }
+  .checker label { display: block; font-weight: 700; margin-bottom: 8px; }
+  .field {
+    width: 100%;
+    font: inherit; color: var(--ink);
+    padding: 14px 16px;
+    border: 2px solid var(--ink); border-radius: 6px;
+    background: var(--paper);
+  }
+  .field:focus-visible { outline-offset: 2px; }
+  .answer { margin-top: 12px; min-height: 1.55em; font-weight: 700; }
+  .towns {
+    margin: 36px 0 0; padding: 0; list-style: none;
+    columns: 4 9rem; column-gap: 32px;
+    color: var(--steel);
+  }
+  .towns li { break-inside: avoid; padding: 2px 0; }
+  .towns li.hit { color: var(--ink); font-weight: 700; }
+  .towns li.hit::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; background: var(--red); border-radius: 50%; vertical-align: 2px; }
+
+  /* Quote */
+  .quote { background: var(--ink); color: #fff; }
+  .quote .intro { color: #C9D6E2; }
+  .quote form { margin-top: 40px; display: grid; gap: 20px; max-width: 40rem; }
+  .quote .row { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+  .quote label { display: block; font-weight: 700; margin-bottom: 8px; }
+  .quote .hint { font-weight: 400; color: #C9D6E2; }
+  .quote .field { border-color: var(--paper); }
+  .quote textarea.field { min-height: 140px; resize: vertical; }
+  .quote .send {
+    justify-self: start; border: 0; cursor: pointer;
+    font-family: var(--display); font-weight: 800; font-size: 1.5rem; line-height: 1;
+    padding: 0.7em 1.1em 0.66em; border-radius: 6px;
+    background: var(--sky); color: var(--ink);
+  }
+  .quote .send:hover { background: #fff; }
+  .quote .or { margin-top: 28px; color: #C9D6E2; }
+  .quote .or a { color: #fff; font-weight: 700; white-space: nowrap; }
+
+  /* Footer */
+  .foot { padding: 56px 0 48px; }
+  .foot::before { content: ""; display: block; height: 14px; background: var(--sky); margin-top: -56px; margin-bottom: 56px; }
+  .foot .big {
+    font-family: var(--display); font-weight: 900;
+    font-size: clamp(3rem, 10vw, 7rem); line-height: .95;
+    text-decoration: none; display: inline-block;
+    font-variant-numeric: tabular-nums;
+  }
+  .foot .big:hover { color: var(--red); }
+  .foot nav { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px 28px; font-size: 1rem; }
+  .foot small { display: block; margin-top: 28px; color: var(--steel); font-size: .9rem; }
+
+  /* Mobile call bar */
+  .callbar { display: none; }
+
+  @media (max-width: 860px) {
+    .services { grid-template-columns: 1fr; gap: 32px; }
+    .split { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    body { padding-bottom: 84px; }
+    .top .call, .top-right .quiet-link { display: none; }
+    .quote .row { grid-template-columns: 1fr; }
+    .key-caption { font-size: 1rem; }
+    .callbar {
+      display: flex; position: fixed; z-index: 10;
+      left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+    }
+    .callbar .call { flex: 1; justify-content: center; font-size: 1.5rem; box-shadow: 0 6px 18px rgba(15, 36, 56, .28); }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 100 100">
+    <polygon points="50.0,0.0 40.5,33.5 6.7,25.0 31.0,50.0 6.7,75.0 40.5,66.5 50.0,100.0 59.5,66.5 93.3,75.0 69.0,50.0 93.3,25.0 59.5,33.5"/>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/>
+  </symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="24/6 Locksmith home">
+      <svg aria-hidden="true"><use href="#star"/></svg>
+      24/6 Locksmith
+    </a>
+    <div class="top-right">
+      <a class="quiet-link" href="#quote">Free quote</a>
+      <a class="call" href="tel:+13122787065"><svg aria-hidden="true"><use href="#phone"/></svg><span class="call-num">(312) 278-7065</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1><span class="line">Locked out in Chicago?</span> <span class="line">We can be there in 20 minutes.</span></h1>
+      <div class="hero-grid">
+        <p class="lede">A local locksmith for cars, homes, and businesses. When you call, you talk to the locksmith who does the work, not a call center.</p>
+        <div>
+          <div class="hero-actions">
+            <a class="call" href="tel:+13122787065"><svg aria-hidden="true"><use href="#phone"/></svg>Call <span class="call-num">(312) 278-7065</span></a>
+            <a class="quiet-link" href="#quote">Get a free quote online</a>
+          </div>
+          <p class="hours">24 hours a day, 6 days a week. Nights and weekends included.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="band-field">
+        <div class="wrap">
+          <a class="key-link" href="tel:+13122787065" aria-label="Call (312) 278-7065">
+            <svg class="key" id="key" viewBox="0 0 1200 290" aria-hidden="true">
+              <rect class="metal" x="8" y="30" width="250" height="200" rx="92"/>
+              <circle class="hole" cx="74" cy="130" r="26"/>
+              <text class="stamp" x="122" y="149">24/6</text>
+              <path class="metal" id="blade" d=""/>
+              <line class="groove" x1="292" y1="92" x2="1112" y2="92"/>
+              <g id="digits"></g>
+            </svg>
+          </a>
+          <p class="key-caption">Every key is cut to a number. Ours is <strong>(312) 278-7065</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="help">
+    <div class="wrap">
+      <h2 id="help">What we can help with</h2>
+      <ul class="services">
+        <li>
+          <h3>Cars</h3>
+          <p>Keys locked inside, keys lost, or a lock that won't turn. We come to wherever the car is parked.</p>
+        </li>
+        <li>
+          <h3>Homes</h3>
+          <p>Lockouts, rekeying after a move, and new locks and deadbolts fitted to the door you have.</p>
+        </li>
+        <li>
+          <h3>Businesses</h3>
+          <p>Storefronts, offices, hospitals, and nursing homes. Locks repaired, replaced, or rekeyed when staff changes.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block guarantees" aria-labelledby="guarantees">
+    <div class="wrap split">
+      <div>
+        <h2 id="guarantees">Three guarantees on every job</h2>
+        <p class="intro">You shouldn't have to wonder what happens if something goes wrong after we leave.</p>
+      </div>
+      <ul class="glist">
+        <li>
+          <h3>100% satisfaction</h3>
+          <p>If something isn't right, call us back and we'll make it right.</p>
+        </li>
+        <li>
+          <h3>90 days on parts and labor</h3>
+          <p>Every new part and every repair is covered for 90 days. The big national chains stop at 30.</p>
+        </li>
+        <li>
+          <h3>The best price</h3>
+          <p>Bring us any local quote and we'll meet or beat it. See this month's <a class="quiet-link" href="https://mylocknow.com/Coupons.html/">special offers</a>.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block local" aria-labelledby="local">
+    <div class="wrap">
+      <h2 id="local">You'll talk to the locksmith, not a call center</h2>
+      <div class="body">
+        <p>No dispatcher, no out-of-state contractor sent to the highest bidder. The person who answers is the person who shows up, and the same person you can call next month with a question.</p>
+        <p>We've spent nearly ten years in homes, hospitals, nursing homes, and stores across Chicagoland. Licensed, insured, and local.</p>
+      </div>
+      <aside class="tip" aria-label="A tip before you call any locksmith">
+        <p>Before you call any locksmith, ask for their address before you give yours. A local locksmith can answer right away.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block area" aria-labelledby="area">
+    <div class="wrap">
+      <h2 id="area">Within 25 miles of the North Side</h2>
+      <p class="intro">In Chicago we serve everywhere north of Garfield Blvd. Here are the suburbs we cover most.</p>
+      <div class="checker">
+        <label for="town">Check your town</label>
+        <input class="field" id="town" type="text" autocomplete="address-level2" placeholder="e.g. Skokie" aria-describedby="town-answer">
+        <p class="answer" id="town-answer" aria-live="polite"></p>
+      </div>
+      <ul class="towns" id="towns"></ul>
+    </div>
+  </section>
+
+  <section class="block quote" id="quote" aria-labelledby="quote-h">
+    <div class="wrap">
+      <h2 id="quote-h">Get a free quote</h2>
+      <p class="intro">Tell us about the lock, the vehicle, or the problem, plus your zip code. We'll reply with an accurate price.</p>
+      <!-- Point this form at your existing form handler before going live. -->
+      <form action="#" method="post">
+        <div class="row">
+          <div>
+            <label for="q-name">Your name</label>
+            <input class="field" id="q-name" name="name" type="text" autocomplete="given-name" required>
+          </div>
+          <div>
+            <label for="q-zip">Zip code</label>
+            <input class="field" id="q-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" required>
+          </div>
+        </div>
+        <div>
+          <label for="q-contact">Phone or email <span class="hint">so we can send your price</span></label>
+          <input class="field" id="q-contact" name="contact" type="text" autocomplete="tel" required>
+        </div>
+        <div>
+          <label for="q-msg">What do you need?</label>
+          <textarea class="field" id="q-msg" name="message" placeholder="e.g. Locked out of a 2016 Honda Civic, or rekey 3 front-door locks" required></textarea>
+        </div>
+        <button class="send" type="submit">Send for a quote</button>
+      </form>
+      <p class="or">In a hurry? Call <a href="tel:+13122787065">(312) 278-7065</a> and get a price on the phone.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="big" href="tel:+13122787065">(312) 278-7065</a>
+    <nav aria-label="Footer">
+      <a class="quiet-link" href="https://mylocknow.com/Coupons.html/">Special offers</a>
+      <a class="quiet-link" href="https://www.yelp.com/biz/24-6-locksmith-chicago">Reviews on Yelp</a>
+      <a class="quiet-link" href="https://mylocknow.com/privacy-policy/">Privacy policy</a>
+    </nav>
+    <small>24/6 Locksmith, Chicago, IL. Licensed and insured.</small>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="call" href="tel:+13122787065"><svg aria-hidden="true"><use href="#phone"/></svg>Call <span class="call-num">(312) 278-7065</span></a>
+</div>
+
+<script>
+/* ---------- The key: its bitting is the phone number ---------- */
+(function () {
+  const NUMBER = "3122787065";
+  const BASE = 190, TOP = 66, SLOPE = 1.45, HALF = 9;
+  const FIRST = 330, LAST = 1080;
+  const step = (LAST - FIRST) / (NUMBER.length - 1);
+  const cuts = [...NUMBER].map((d, i) => ({ x: FIRST + i * step, target: 14 + Number(d) * 9.2, depth: 0 }));
+
+  const blade = document.getElementById("blade");
+  const digitsG = document.getElementById("digits");
+  const NS = "http://www.w3.org/2000/svg";
+
+  const digitEls = cuts.map((c, i) => {
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("class", "digit pending");
+    t.setAttribute("x", c.x.toFixed(1));
+    t.setAttribute("y", "268");
+    t.textContent = NUMBER[i];
+    digitsG.appendChild(t);
+    return t;
+  });
+
+  function draw() {
+    // bottom edge, left to right
+    const pts = [];
+    cuts.forEach((c, i) => {
+      const y = BASE - c.depth, l = c.x - HALF, r = c.x + HALF;
+      if (i === 0) pts.push([l - c.depth / SLOPE, BASE]);
+      pts.push([l, y], [r, y]);
+      const n = cuts[i + 1];
+      if (n) {
+        const ny = BASE - n.depth, nl = n.x - HALF;
+        const ix = (nl + r) / 2 + (ny - y) / (2 * SLOPE);
+        const iy = y + (ix - r) * SLOPE;
+        if (iy >= BASE) pts.push([r + c.depth / SLOPE, BASE], [nl - n.depth / SLOPE, BASE]);
+        else pts.push([ix, iy]);
+      } else {
+        pts.push([r + c.depth / SLOPE, BASE]);
+      }
+    });
+    const f = (p) => p[0].toFixed(1) + "," + p[1].toFixed(1);
+    let d = `M236,${TOP} L1118,${TOP} L1180,124 L1138,${BASE} `;
+    for (let i = pts.length - 1; i >= 0; i--) d += "L" + f(pts[i]) + " ";
+    d += `L236,${BASE} Z`;
+    blade.setAttribute("d", d);
+  }
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) {
+    cuts.forEach((c) => (c.depth = c.target));
+    digitEls.forEach((t) => t.classList.remove("pending"));
+    draw();
+    return;
+  }
+
+  // One orchestrated moment: the key is cut from tip to bow-side, one position at a time.
+  draw();
+  const DUR = 260, GAP = 140, DELAY = 450;
+  const order = cuts.map((_, i) => i);
+  let start = null;
+  function frame(ts) {
+    if (start === null) start = ts;
+    const t = ts - start - DELAY;
+    let done = true;
+    order.forEach((idx, k) => {
+      const c = cuts[idx];
+      const p = Math.min(1, Math.max(0, (t - k * GAP) / DUR));
+      const e = 1 - Math.pow(1 - p, 3);
+      c.depth = c.target * e;
+      if (p > 0.6) digitEls[idx].classList.remove("pending");
+      if (p < 1) done = false;
+    });
+    draw();
+    if (!done) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ---------- Service-area checker ---------- */
+(function () {
+  const TOWNS = ["Arlington Heights","Bellwood","Bensenville","Berkeley","Berwyn","Broadview","Brookfield","Buffalo Grove","Chicago","Cicero","Deerfield","Des Plaines","Elk Grove Village","Elmhurst","Elmwood Park","Evanston","Forest Park","Franklin Park","Glencoe","Glenview","Golf","Harwood Heights","Highland Park","Highwood","Hillside","Hines","Kenilworth","La Grange Park","Lincolnwood","Lyons","Maywood","Melrose Park","Morton Grove","Mount Prospect","Niles","Northbrook","Oak Park","Park Ridge","Prospect Heights","River Forest","River Grove","Riverside","Schiller Park","Skokie","Stone Park","Summit","Techny","Westchester","Wheeling","Wilmette","Winnetka","Wood Dale"];
+  const list = document.getElementById("towns");
+  const input = document.getElementById("town");
+  const answer = document.getElementById("town-answer");
+  const items = TOWNS.map((t) => {
+    const li = document.createElement("li");
+    li.textContent = t;
+    list.appendChild(li);
+    return li;
+  });
+  const norm = (s) => s.toLowerCase().replace(/[^a-z]/g, "");
+
+  input.addEventListener("input", () => {
+    const q = norm(input.value);
+    let exact = null, hits = 0;
+    items.forEach((li, i) => {
+      const n = norm(TOWNS[i]);
+      const hit = q.length > 1 && n.startsWith(q);
+      li.classList.toggle("hit", hit);
+      if (hit) hits++;
+      if (q && n === q) exact = TOWNS[i];
+    });
+    if (!q) answer.textContent = "";
+    else if (exact === "Chicago") answer.textContent = "Yes, anywhere in Chicago north of Garfield Blvd.";
+    else if (exact) answer.textContent = `Yes, we come to ${exact}.`;
+    else if (hits) answer.textContent = "";
+    else if (q.length > 2) answer.textContent = "That town isn't on this list, but we may still reach you. Call (312) 278-7065 and ask.";
+    else answer.textContent = "";
+  });
+})();
+</script>
+</body>
+</html>
