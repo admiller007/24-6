@@ -1,0 +1,151 @@
+/* One browser window, inset top and sides, running off the bottom (the
+   page's own content continues below the crop). On the cool well. */
+.ls .ss-stage {
+  overflow: hidden;
+  background: var(--ss-well);
+}
+
+.ls-win {
+  position: absolute;
+  left: 60px;
+  top: 48px;
+  width: 960px;
+  height: 640px;
+  box-shadow: var(--ss-shadow-hero);
+}
+
+.ls-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  user-select: none;
+}
+
+.ls-page {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ls-page--new {
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip-path: inset(0 0 0 var(--x));
+}
+
+/* The divider: a white rule the full height of the view, and its handle */
+.ls-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--x);
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(15, 36, 56, 0.14);
+  opacity: var(--edge, 1);
+}
+
+.ls-handle {
+  position: absolute;
+  left: var(--h);
+  top: var(--ls-handle-y, 300px);
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  border-radius: 50%;
+  background: #fff;
+  color: #0f2438;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 1px rgba(15, 36, 56, 0.12), 0 6px 16px -4px rgba(15, 36, 56, 0.35);
+  transition: transform 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ls-handle[data-pressed] {
+  transform: scale(0.92);
+}
+
+.ls-handle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Before and After name the two sides; each leaves as its side gets too
+   narrow to hold it (opacity is set from the divider position) */
+.ls-tag {
+  position: absolute;
+  top: 76px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #0f2438;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-box: trim-both cap alphabetic;
+}
+
+.ls-tag--before { left: 16px; }
+.ls-tag--after { right: 16px; }
+
+.ls-rest {
+  position: absolute;
+  left: 690px;
+  top: 520px;
+  width: 1px;
+  height: 1px;
+}
+
+/* Phone: the same comparison on the mobile pages, under a finger */
+.ls--phone .ls-phone {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+.ls--phone .ls-view {
+  --ls-handle-y: 331px;   /* the gap between the new headline and its lede */
+}
+
+.ls--phone .ls-handle {
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+}
+
+.ls--phone .ls-handle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ls--phone .ls-tag {
+  top: 96px;
+  font-size: 15px;
+  padding: 7px 12px;
+}
+
+.ls--phone .ls-tag--before { left: 16px; }
+.ls--phone .ls-tag--after { right: 16px; }
+
+.ls--phone .ls-rest {
+  left: 250px;
+  top: 560px;
+}
+
+/* The host shows the design that fits */
+.ls-host__phone { display: none; }
+
+@media (max-width: 600px) {
+  .ls-host__wide { display: none; }
+  .ls-host__phone { display: block; }
+}

@@ -1,0 +1,100 @@
+/* Two windows at one height and top, one gutter between and around them,
+   running a little off the bottom. */
+.lw .ss-stage {
+  overflow: hidden;
+  background: var(--ss-well);
+}
+
+.lw-win {
+  position: absolute;
+  top: 28px;
+  width: 500px;
+  height: 560px;
+}
+
+.lw-win--before {
+  left: 28px;
+}
+
+.lw-win--after {
+  left: 552px;
+  z-index: 1;
+  box-shadow: var(--ss-shadow-hero);
+}
+
+.lw-pane {
+  position: relative;
+  height: 100%;
+  background: #fff;
+}
+
+.lw-scroll {
+  height: 100%;
+}
+
+.lw-page {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The windows run 68px off the bottom of the stage; the page ends that far
+   above the window's foot, so at the bottom of the scroll the footer shows whole */
+.lw--wide .lw-page {
+  margin-bottom: 68px;
+}
+
+.lw-tag {
+  position: absolute;
+  z-index: 2;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #0f2438;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-box: trim-both cap alphabetic;
+  pointer-events: none;
+}
+
+.lw-rest {
+  position: absolute;
+  left: 820px;
+  top: 400px;
+  width: 1px;
+  height: 1px;
+}
+
+/* Phone: two small phones side by side, whole */
+.lw--phone .lw-phone {
+  position: absolute;
+  top: 24px;
+}
+
+.lw--phone .lw-phone--before { left: 24px; }
+.lw--phone .lw-phone--after { left: 185px; }
+
+/* Desktop: in the address bar's right end (bar 38px tall, the tag 26px) */
+.lw--wide .lw-win .ss-window__url { margin-right: 84px; }
+.lw--wide .lw-tag { top: 34px; }
+.lw--wide .lw-tag--before { right: 562px; }   /* the left window's bar ends at 528 */
+.lw--wide .lw-tag--after { right: 38px; }     /* the right window's bar ends at 1052 */
+
+/* Phone: centered on each phone's foot, half outside it */
+.lw--phone .lw-tag {
+  top: 320px;
+  font-size: 11px;
+  padding: 5px 9px;
+  transform: translateX(-50%);
+}
+.lw--phone .lw-tag--before { left: 98.5px; }
+.lw--phone .lw-tag--after { left: 259.5px; }
+
+/* The host shows the design that fits */
+.lw-host__phone { display: none; }
+
+@media (max-width: 600px) {
+  .lw-host__wide { display: none; }
+  .lw-host__phone { display: block; }
+}
